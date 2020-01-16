@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>F2L</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="js_css/bootstrap.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style>
+	.my-img {
+		max-width: 90%; 
+		max-height: 80px; 
+	}
+</style> 
+<style>
+	code {
+		color: black;
+		background-color: transparent;
+		font-size:14px;
+	}
+</style> 
+</head>
+<body style="background-color:#dfdfdf;">
+<h3 >First two layers</h3>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-6">
+<img src="f2l/f2l_moves.png" style="max-width: 90%; max-height: 160px; "  class="img-thumbnail better" alt="Symbol"    onclick="fillf2l('better')"/>
+</div><div class="col-sm-6">
+<img src="f2l/f2l_colors.png" style="max-width: 90%; max-height: 160px; "  class="img-thumbnail better" alt="Symbol"    onclick="fillf2l('better')"/>
+</div></div>
+<br/>
+</div>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-4">
+<table cellpadding="6" cellspacing="0" border="0">
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l01.png" alt="Symbol" /></td><td width="70%"><code id="f2l1"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l02.png" alt="Symbol" /></td><td width="70%"><code id="f2l2"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l03.png" alt="Symbol" /></td><td width="70%"><code id="f2l3"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l04.png" alt="Symbol" /></td><td width="70%"><code id="f2l4"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l05.png" alt="Symbol" /></td><td width="70%"><code id="f2l5"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l06.png" alt="Symbol" /></td><td width="70%"><code id="f2l6"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l07.png" alt="Symbol" /></td><td width="70%"><code id="f2l7"></code></td></tr>
+</table>
+</div><div class="col-sm-4" >
+<table cellpadding="6" cellspacing="0" border="0">
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l08.png" alt="Symbol" /></td><td width="70%"><code id="f2l8"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l09.png" alt="Symbol" /></td><td width="70%"><code id="f2l9"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l10.png" alt="Symbol" /></td><td width="70%"><code id="f2l10"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l11.png" alt="Symbol" /></td><td width="70%"><code id="f2l11"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l12.png" alt="Symbol" /></td><td width="70%"><code id="f2l12"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l13.png" alt="Symbol" /></td><td width="70%"><code id="f2l13"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l14.png" alt="Symbol" /></td><td width="70%"><code id="f2l14"></code></td></tr>
+</table>
+</div><div class="col-sm-4">
+<table cellpadding="6" cellspacing="0" border="0">
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l15.png" alt="Symbol" /></td><td width="70%"><code id="f2l15"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l16.png" alt="Symbol" /></td><td width="70%"><code id="f2l16"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l17.png" alt="Symbol" /></td><td width="70%"><code id="f2l17"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l18.png" alt="Symbol" /></td><td width="70%"><code id="f2l18"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l19.png" alt="Symbol" /></td><td width="70%"><code id="f2l19"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l20.png" alt="Symbol" /></td><td width="70%"><code id="f2l20"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l21.png" alt="Symbol" /></td><td width="70%"><code id="f2l21"></code></td></tr>
+</table></div></div>
+<br/>
+<div class="row">
+<div class="col-sm-4">
+<table cellpadding="6" cellspacing="0" border="0">
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l22.png" alt="Symbol" /></td><td width="70%"><code id="f2l22"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l23.png" alt="Symbol" /></td><td width="70%"><code id="f2l23"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l24.png" alt="Symbol" /></td><td width="70%"><code id="f2l24"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l25.png" alt="Symbol" /></td><td width="70%"><code id="f2l25"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l26.png" alt="Symbol" /></td><td width="70%"><code id="f2l26"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l27.png" alt="Symbol" /></td><td width="70%"><code id="f2l27"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l28.png" alt="Symbol" /></td><td width="70%"><code id="f2l28"></code></td></tr>
+</table>
+</div><div class="col-sm-4" >
+<table cellpadding="6" cellspacing="0" border="0">
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l29.png" alt="Symbol" /></td><td width="70%"><code id="f2l29"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l30.png" alt="Symbol" /></td><td width="70%"><code id="f2l30"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l31.png" alt="Symbol" /></td><td width="70%"><code id="f2l31"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l32.png" alt="Symbol" /></td><td width="70%"><code id="f2l32"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l33.png" alt="Symbol" /></td><td width="70%"><code id="f2l33"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l34.png" alt="Symbol" /></td><td width="70%"><code id="f2l34"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l35.png" alt="Symbol" /></td><td width="70%"><code id="f2l35"></code></td></tr>
+</table>
+</div><div class="col-sm-4">
+<table cellpadding="6" cellspacing="0" border="0">
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l36.png" alt="Symbol" /></td><td width="70%"><code id="f2l36"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l37.png" alt="Symbol" /></td><td width="70%"><code id="f2l37"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l38.png" alt="Symbol" /></td><td width="70%"><code id="f2l38"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l39.png" alt="Symbol" /></td><td width="70%"><code id="f2l39"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l40.png" alt="Symbol" /></td><td width="70%"><code id="f2l40"></code></td></tr>
+<tr><td width="30%"><img class="better" onclick="fillf2l('better')" border="0" src="f2l/f2l41.png" alt="Symbol" /></td><td width="70%"><code id="f2l41"></code></td></tr>
+</table></div></div>
+</div>
+
+<br/>
+<div class="container-fluid">
+<a href="http://www.cubewhiz.com/index.php" target="_blank" style="color:red">Cubewhiz</a> &nbsp; 
+<a href="http://www.rubiksplace.com/speedcubing/F2L-algorithms/" target="_blank" style="color:red">Speedcubing F2L</a> &nbsp; 
+<a href="./pll.html">pll</a>
+<a href="./oll.html">oll</a> &nbsp; 
+<a href="./ollnew.html">new oll</a> &nbsp; 
+<a href="./gdr.html">gdr</a> &nbsp; 
+</div>
+<script src="js_css/popper.min.js"></script>
+<script src="js_css/jquery.min.js"></script>
+<script src="js_css/bootstrap.min.js"></script>
+<script type="text/javascript" src="js_css/text-min.js"></script>
+<script type="text/javascript">
+	fillf2l("better");
+</script>
+</body><html>

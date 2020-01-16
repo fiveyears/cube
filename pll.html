@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PLL</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="js_css/bootstrap.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style>
+	code {
+		color: black;
+		background-color: transparent;
+		font-size:14px;
+	}
+</style> 
+</head>
+<body  style="background-color:#eee;">
+<h3>Permutation of the last layer</h3>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-6">
+<img src="f2l/f2l_moves.png" style="max-width: 90%; max-height: 160px; "  class="img-thumbnail better" alt="Symbol"   onclick="fill('better')"/>
+</div>
+<div class="col-sm-6">
+<img src="f2l/f2l_colors.png" style="max-width: 90%; max-height: 100px; "  class="img-thumbnail better" alt="Symbol"  onclick="fill('better')"/>
+</div>
+</div>
+</div>
+
+<br/>
+<div class="container-fluid">
+
+<div class="row">
+<div class="col-sm-4" style="background-color:#eee;">
+<table cellpadding="6" cellspacing="0" border="0">
+<tr><td width="10%"> PLL 01</td><td width="20%"><img border="0"   class="better" onclick="fill('better')" src="pll/PLL01.png" alt="Symbol" /></td><td width="70%"><code id="pll1"></code></td></tr>
+<tr><td width="10%"> PLL 02</td><td width="20%"><img border="0"   class="better" onclick="fill('better')" src="pll/PLL02.png" alt="Symbol" /></td><td width="70%"><code id="pll2"></code></td></tr>
+<tr><td width="10%"> PLL 03</td><td width="20%"><img border="0"   class="better" onclick="fill('better')" src="pll/PLL03.png" alt="Symbol" /></td><td width="70%"><code id="pll3"></code></td></tr>
+<tr><td width="10%"> PLL 04</td><td width="20%"><img border="0"   class="better" onclick="fill('better')" src="pll/PLL04.png" alt="Symbol" /></td><td width="70%"><code id="pll4"></code></td></tr>
+<tr><td width="10%"> PLL 05</td><td width="20%"><img border="0"   class="better" onclick="fill('better')" src="pll/PLL05.png" alt="Symbol" /></td><td width="70%"><code id="pll5"></code></td></tr>
+<tr><td width="10%"> PLL 06</td><td width="20%"><img border="0"   class="better" onclick="fill('better')" src="pll/PLL06.png" alt="Symbol" /></td><td width="70%"><code id="pll6"></code></td></tr>
+<tr><td width="10%"> PLL 07</td><td width="20%"><img border="0"   class="better" onclick="fill('better')" src="pll/PLL07.png" alt="Symbol" /></td><td width="70%"><code id="pll7"></code></td></tr>
+</table><br/>
+</div><div class="col-sm-4"  style="background-color:#eee;">
+<table cellpadding="6" cellspacing="0" border="0">
+<tr><td width="10%"> PLL 08</td><td width="20%"><img border="0"   class="better" onclick="fill('better')" src="pll/PLL08.png" alt="Symbol" /></td><td width="70%"><code id="pll8"></code></td></tr>
+<tr><td width="10%"> PLL 09</td><td width="20%"><img border="0"   class="better" onclick="fill('better')" src="pll/PLL09.png" alt="Symbol" /></td><td width="70%"><code id="pll9"></code></td></tr>
+<tr><td width="10%"> PLL 13</td><td width="20%"><img border="0"   class="better" onclick="fill('better')" src="pll/PLL13.png" alt="Symbol" /></td><td width="70%"><code id="pll13"></code></td></tr>
+<tr><td width="10%"> PLL 21</td><td width="20%"><img border="0"   class="better" onclick="fill('better')" src="pll/PLL21.png" alt="Symbol" /></td><td width="70%"><code id="pll21"></code></td></tr>
+<tr><td width="10%"> PLL 10</td><td width="20%"><img border="0"   class="better" onclick="fill('better')" src="pll/PLL10.png" alt="Symbol" /></td><td width="70%"><code id="pll10"></code></td></tr>
+<tr><td width="10%"> PLL 11</td><td width="20%"><img border="0"   class="better" onclick="fill('better')" src="pll/PLL11.png" alt="Symbol" /></td><td width="70%"><code id="pll11"></code></td></tr>
+<tr><td width="10%"> PLL 12</td><td width="20%"><img border="0"   class="better" onclick="fill('better')" src="pll/PLL12.png" alt="Symbol" /></td><td width="70%"><code id="pll12"></code></td></tr>
+</table><br/>
+</div>
+
+<div class="col-sm-4"  style="background-color:#eee;">
+<table cellpadding="6" cellspacing="0" border="0">
+<tr><td width="10%"> PLL 14</td><td width="20%"><img border="0"   class="better" onclick="fill('better')" src="pll/PLL14.png" alt="Symbol" /></td><td width="70%"><code id="pll14"></code></td></tr>
+<tr><td width="10%"> PLL 15</td><td width="20%"><img border="0"   class="better" onclick="fill('better')" src="pll/PLL15.png" alt="Symbol" /></td><td width="70%"><code id="pll15"></code></td></tr>
+<tr><td width="10%"> PLL 16</td><td width="20%"><img border="0"   class="better" onclick="fill('better')" src="pll/PLL16.png" alt="Symbol" /></td><td width="70%"><code id="pll16"></code></td></tr>
+<tr><td width="10%"> PLL 18</td><td width="20%"><img border="0"   class="better" onclick="fill('better')" src="pll/PLL18.png" alt="Symbol" /></td><td width="70%"><code id="pll18"></code></td></tr>
+<tr><td width="10%"> PLL 17</td><td width="20%"><img border="0"   class="better" onclick="fill('better')" src="pll/PLL17.png" alt="Symbol" /></td><td width="70%"><code id="pll17"></code></td></tr>
+<tr><td width="10%"> PLL 19</td><td width="20%"><img border="0"   class="better" onclick="fill('better')" src="pll/PLL19.png" alt="Symbol" /></td><td width="70%"><code id="pll19"></code></td></tr>
+<tr><td width="10%"> PLL 20</td><td width="20%"><img border="0"   class="better" onclick="fill('better')" src="pll/PLL20.png" alt="Symbol" /></td><td width="70%"><code id="pll20"></code></td></tr>
+</table><br/>
+</div>
+</div>
+</div>
+<br/>
+<div class="container-fluid">
+<a href="http://www.cubewhiz.com/index.php" target="_blank" style="color:red">Cubewhiz</a> &nbsp; 
+<a href="http://www.rubiksplace.com/speedcubing/F2L-algorithms/" target="_blank" style="color:red">Speedcubing F2L</a> &nbsp; 
+<a href="./oll.html">oll</a> &nbsp; 
+<a href="./ollnew.html">new oll</a> &nbsp; 
+<a href="./f2l.html">f2l</a> &nbsp; 
+<a href="./gdr.html">gdr</a> &nbsp; 
+</div>
+<script src="js_css/popper.min.js"></script>
+<script src="js_css/jquery.min.js"></script>
+<script src="js_css/bootstrap.min.js"></script>
+<script type="text/javascript" src="js_css/text-min.js"></script>
+<script type="text/javascript">
+	fill("better");
+</script>
+</body><html>
