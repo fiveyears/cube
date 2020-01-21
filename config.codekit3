@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "31934",
 "files": {
+	"/CNAME": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/CNAME",
+		"oF": 0
+		},
 	"/f2l.html": {
 		"cB": 0,
 		"ft": 8192,
