@@ -9,12 +9,20 @@
 	],
 "creatorBuild": "31934",
 "files": {
-	"/copyscript.sh": {
+	"/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/copyscript.sh",
+		"oAP": "/.gitignore",
+		"oF": 0
+		},
+	"/CNAME": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/CNAME",
 		"oF": 0
 		},
 	"/f2l.html": {
@@ -660,6 +668,36 @@
 		"oA": 0,
 		"oAP": "/js_css/popper.min.js.map",
 		"oF": 0
+		},
+	"/js_css/text-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js_css/text-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js_css/text-min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/js_css/text-min.js.map",
+		"oF": 0
+		},
+	"/js_css/text.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js_css/text-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/oll.html": {
 		"cB": 0,
@@ -1542,22 +1580,6 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
-		},
-	"/pullremote.sh": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/pullremote.sh",
-		"oF": 0
-		},
-	"/remotecopy.sh": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/remotecopy.sh",
-		"oF": 0
 		}
 	},
 "hooks": [
