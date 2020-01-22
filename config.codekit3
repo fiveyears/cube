@@ -9,12 +9,12 @@
 	],
 "creatorBuild": "31934",
 "files": {
-	"/CNAME": {
+	"/copyscript.sh": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/CNAME",
+		"oAP": "/copyscript.sh",
 		"oF": 0
 		},
 	"/f2l.html": {
@@ -660,36 +660,6 @@
 		"oA": 0,
 		"oAP": "/js_css/popper.min.js.map",
 		"oF": 0
-		},
-	"/js_css/text-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js_css/text-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js_css/text-min.js.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/js_css/text-min.js.map",
-		"oF": 0
-		},
-	"/js_css/text.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 1,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js_css/text-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
 		},
 	"/oll.html": {
 		"cB": 0,
@@ -1572,9 +1542,34 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/pullremote.sh": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/pullremote.sh",
+		"oF": 0
+		},
+	"/remotecopy.sh": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/remotecopy.sh",
+		"oF": 0
 		}
 	},
 "hooks": [
+	{
+		"enabled": 1,
+		"name": "Remotecopy",
+		"predicateDataBase64Encoded": "YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBYLDBMYICorLjU5Pj9CRkpPUFNZXWFjVSRudWxs0w0ODxAREl8QF05TQ29tcG91bmRQcmVkaWNhdGVUeXBlXxAPTlNTdWJwcmVkaWNhdGVzViRjbGFzcxACgAKAFdIUDxUXWk5TLm9iamVjdHOhFoADgBTUDxkaGxwdHh9fEBFOU1JpZ2h0RXhwcmVzc2lvbl8QEE5TTGVmdEV4cHJlc3Npb25fEBNOU1ByZWRpY2F0ZU9wZXJhdG9ygBOADoAEgBHVISIjJA8lJicoKVlOU09wZXJhbmReTlNTZWxlY3Rvck5hbWVfEBBOU0V4cHJlc3Npb25UeXBlW05TQXJndW1lbnRzgAaABRADgAiADVx2YWx1ZUZvcktleTrSIw8sLRABgAfSLzAxMlokY2xhc3NuYW1lWCRjbGFzc2VzXxAQTlNTZWxmRXhwcmVzc2lvbqMxMzRcTlNFeHByZXNzaW9uWE5TT2JqZWN00hQPNjihN4AJgAzTDyM6Ozw9WU5TS2V5UGF0aIALEAqACl1pbnB1dEZ1bGxQYXRo0i8wQEFfEBxOU0tleVBhdGhTcGVjaWZpZXJFeHByZXNzaW9uo0AzNNIvMENEXk5TTXV0YWJsZUFycmF5o0NFNFdOU0FycmF50i8wR0hfEBNOU0tleVBhdGhFeHByZXNzaW9upEdJMzRfEBROU0Z1bmN0aW9uRXhwcmVzc2lvbtNLIw9MTU5fEA9OU0NvbnN0YW50VmFsdWWADxAAgBBSVzHSLzBRUl8QGU5TQ29uc3RhbnRWYWx1ZUV4cHJlc3Npb26jUTM01A9UVVZXTSxYWk5TTW9kaWZpZXJXTlNGbGFnc15OU09wZXJhdG9yVHlwZYASEGPSLzBaW18QFU5TSW5QcmVkaWNhdGVPcGVyYXRvcqNaXDRfEBNOU1ByZWRpY2F0ZU9wZXJhdG9y0i8wXl9fEBVOU0NvbXBhcmlzb25QcmVkaWNhdGWjXmA0W05TUHJlZGljYXRl0i8wRWKiRTTSLzBkZV8QE05TQ29tcG91bmRQcmVkaWNhdGWjZGA0AAgAEQAaACQAKQAyADcASQBMAFEAUwBsAHIAeQCTAKUArACuALAAsgC3AMIAxADGAMgA0QDlAPgBDgEQARIBFAEWASEBKwE6AU0BWQFbAV0BXwFhAWMBcAF1AXcBeQF+AYkBkgGlAakBtgG/AcQBxgHIAcoB0QHbAd0B3wHhAe8B9AITAhcCHAIrAi8CNwI8AlICVwJuAnUChwKJAosCjQKQApUCsQK1Ar4CyQLRAuAC4gLkAukDAQMFAxsDIAM4AzwDSANNA1ADVQNrAAAAAAAAAgEAAAAAAAAAZgAAAAAAAAAAAAAAAAAAA28=",
+		"runOrder": 0,
+		"scriptSourceString": "$CK_PROJECT_ROOT/remotecopy.sh",
+		"scriptType": 1,
+		"uuidString": "A2BFDC9D-F5AF-4FF9-A698-A5C10252EBA0"
+		}
 	],
 "manualImportLinks": {
 	},
