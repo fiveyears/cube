@@ -4,30 +4,42 @@ var gdr2 = "(U F R) U (R' U' F')";
 var gdr3 = "(R E)4 U ...<br/>alle Kanten an der gleichen Stelle kippen";
 var gdr4 = "(R D R2 D2 R2 D' R' U) (R D R2 D2 R2 D' R' U')";
 var gdr5 = "(R F' R' F)2 U ...<br/>alle Ecken an der gleichen Stelle drehen";
-var pll1 = " 1. oraM'2; U  oraM; U2 oraM'; U  oraM'2;<br/><br/>2. (R bluU'; R) (U R)2 (bluU'; R' bluU'; R'2)";
-var pll2 = " 1. oraM'2; bluU'; oraM; U2 oraM'; bluU'; oraM'2; <br/><br/>2. (R2 U) (R U) (R' bluU';)2 (R' U R')";
+var pll1 = " 1. oraM'2; U  oraM; U2 oraM'; U  oraM'2;<br/><br/>";
+// 2. (R bluU'; R) (U R)2 (bluU'; R' bluU'; R'2)";
+var pll2 = " 1. oraM'2; bluU'; oraM; U2 oraM'; bluU'; oraM'2; <br/><br/>";
+// 2. (R2 U) (R U) (R' bluU';)2 (R' U R')";
 var pll3 = "oraM'2; U  oraM'2; U2 oraM'2; U  oraM'2;";
 var pll4 = "oraM'; U (oraM'2; U)2 oraM'; U2 oraM'2; bluU';";
 var pll5 = "x' R2 oraD2; (R' bluU'; R) oraD2; (R' U R')";
 var pll6 = "x' (R bluU'; R) oraD2; (R' U R) oraD2; R'2";
-var pll7 = "x' (R bluU'; R' oraD;) (R U R' oraD';)<br/>(R U R' oraD;) (R bluU' R' oraD';)";
-var pll8 = "<u>(R U R' bluU';) (R' F) (R2 bluU'; R' bluU';)</u> (R U R' redF';)";
-var pll9 = "(R' bluU'; redF';) <u>(R U R' bluU';) (R' F) (R2 bluU'; R' bluU';)</u> (R U R' U R)";
+var pll7 = "x' (R bluU'; R' oraD;) (R U R' oraD';)<br/>(R U R' oraD;) " +
+	"(R bluU' R' oraD';)";
+var pll8 = "<u>(R U R' bluU';) (R' F) (R2 bluU'; R' bluU';)</u> " +
+	"(R U R' redF';)";
+var pll9 = "(R' bluU'; redF';) <u>(R U R' bluU';) (R' F) (R2 bluU'; R' bluU';)"+
+	"</u> (R U R' U R)";
 var pll10 = "(R' U R' d') (R' redF'; R2 bluU';) (R' U R' F R F)";
-var pll11 = "F (R bluU'; R' bluU';) (R U R' redF';) (R U R' bluU';) (R' F R redF';)";
+var pll11 = "F (R bluU'; R' bluU';) (R U R' redF';) (R U R' bluU';)" +
+	" (R' F R redF';)";
 var pll12 = "z (bluU'; R oraD';) (R2 U R' bluU';) (R2 U) (oraD; R')";
-var pll13 = "(R U R' redF';) <u>(R U R' bluU';) (R' F) (R2 bluU'; R' bluU';)</u>";
-var pll14 = "(R'  redU'; bluU';) (R redU'; bluU';) (R' F R U R' bluU';) (R' redF'; R2 bluU';)";
-var pll15 = "(R bluU'; R' bluU';) (R U R oraD;) (R' bluU'; R oraD';) (R' U2 R' bluU';)";
+var pll13 = "(R U R' redF';) <u>(R U R' bluU';) (R' F) (R2 bluU'; " +
+	"R' bluU';)</u>";
+var pll14 = "(R'  redU'; bluU';) (R redU'; bluU';) (R' F R U R' bluU';) " +
+	"(R' redF'; R2 bluU';)";
+var pll15 = "(R bluU'; R' bluU';) (R U R oraD;) (R' bluU'; R oraD';) " +
+	"(R' U2 R' bluU';)";
 var pll16 = "(R'2 bluu'; R redU'; R) (U R' u) (R2 f R' redf';)";
 var pll17 = "(R U R') y' (R2 redu'; R bluU';) (R' U R' u R2)";
 var pll18 = "(R2 u R' U R') (bluU'; R bluu';) (R'2 redF'; U redF;)";
 var pll19 = "(R' d' F) (R2 u) (R' U) (R redU'; R bluu'; R'2)";
-var pll20 = "(R' U R bluU';) (R' redF'; bluU';) (F R U R' F) (R' redF'; R bluU'; R)";
-// var pll21 = "(R U R' U) (R U R' redF';) <u>(R U R' bluU';) (R' F) (R2 bluU'; R' redU';</u> bluU';) (R bluU'; R')";
+var pll20 = "(R' U R bluU';) (R' redF'; bluU';) (F R U R' F) " +
+	"(R' redF'; R bluU'; R)";
+// var pll21 = "(R U R' U) (R U R' redF';) <u>(R U R' bluU';)
+// (R' F) (R2 bluU'; R' redU';</u> bluU';) (R bluU'; R')";
 var pll21 = "(R U R' U) PLL 13 (bluU'; R bluU'; R')";
 var oll1 = "(R redU'; bluU';) (R'2 F R redF';)<br/>U2 (R' F R redF';)";
-var oll2 = "F (R U G bluU';)<br/>  S (R U R' bluU';) redf';"; //"F (R U G bluU';) redF';<br/>f (R U R' bluU';) redf';";
+var oll2 = "F (R U G bluU';)<br/>  S (R U R' bluU';) redf';";
+//"F (R U G bluU';) redF';<br/>f (R U R' bluU';) redf';";
 var oll3 = "f (R U R' bluU';) redf'; bluU'; F (R U G bluU';) redF'; ";
 var oll4 = "f (R U R' bluU';) redf'; U F (R U G bluU';) redF'; ";
 var oll5 = "(r' U2) (R U R' U) r";
@@ -43,11 +55,13 @@ var oll14 = "(R' F) (R U R' redF'; R) (F bluU'; redF';)";
 var oll15 = "(r' bluU'; r) (R' bluU'; R U) (r' U r)";
 var oll16 = "(r U r') (R U R' bluU';) (r bluU'; r')";
 var oll17 = "(l bluU'; l') f (R2 B R' U R' bluU'; redf';)";
-var oll18 = "(r U R' U) (R redU'; bluU'; r')<br/>(r' bluU'; R bluU';) (R' U2 r)";
+var oll18 = "(r U R' U) (R redU'; bluU'; r')<br/>(r' bluU'; R bluU';) " +
+	"(R' U2 r)";
 var oll19 = "(r' R U) (R U R' bluU'; r) (R'2)";
 var oll20 = "(r U R' bluU';) oraM'2; U<br/>(R bluU'; R' bluU';) oraM';";
 var oll21 = "(R redU'; bluU';) (R' bluU'; R U R' bluU';) (R bluU'; R')";
-var oll22 = "(R redU'; bluU';) (R'2 bluU';) (R2 bluU';)<br/>(R'2 bluU';) (bluU'; R)";
+var oll22 = "(R redU'; bluU';) (R'2 bluU';) (R2 bluU';)<br/>(R'2 bluU';) " +
+	"(bluU'; R)";
 var oll23 = "(R2 oraD';) (R redU'; bluU'; R' oraD;) (R redU'; bluU'; R)";
 var oll24 = "(r U R' bluU';) (r' F R  redF';)";
 var oll25 = "redF'; (r U R' bluU';) (r' F R )";
