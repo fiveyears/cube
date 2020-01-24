@@ -57,7 +57,7 @@ var oll16 = "(r U r') (R U R' bluU';) (r bluU'; r')";
 var oll17 = "(l bluU'; l') f (R2 B R' U R' bluU'; redf';)";
 var oll18 = "(r U R' U) (R redU'; bluU'; r')<br/>(r' bluU'; R bluU';) " +
 	"(R' U2 r)";
-var oll19 = "(M U) (R U R' bluU'; r) (R'2)";
+var oll19 = "(M U) (R U R' bluU'; r) (R'2 F R redF';)";
 var oll20 = "(r U R' bluU';) oraM'2; U<br/>(R bluU'; R' bluU';) oraM';";
 var oll21 = "(R redU'; bluU';) (R' bluU'; R U R' bluU';) (R bluU'; R')";
 var oll22 = "(R redU'; bluU';) (R'2 bluU';) (R2 bluU';)<br/>(R'2 bluU';) " +
