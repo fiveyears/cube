@@ -184,10 +184,16 @@ function fillf2l(what = "original") {
 	for(var i=1; i<=41; i++) {
 		if (document.getElementById("f2l" + i)) {
 			var sF2l = "<b>" + window['f2l'+i] + "</b>";
-			if (what == "better" ) {
-				sF2l = better(sF2l)
+			if (what == "empty" ) {
+				sF2l = "";
 			}
-			sF2l = color(sF2l);
+			else
+			{
+				if (what == "better" ) {
+					sF2l = better(sF2l)
+				}
+				sF2l = color(sF2l);
+			}
 			document.getElementById("f2l" + i).innerHTML = sF2l;
 		}
 	}
@@ -195,17 +201,26 @@ function fillf2l(what = "original") {
 		$(".better").attr ("onclick", "fillf2l('better')");
 	}
 	else if (what == "better" ) {
-		$(".better").attr ("onclick", "fillf2l('original')");
+		$(".better").attr ("onclick", "fillf2l('empty')");
+	}
+	else if (what == "empty" ) {
+			$(".better").attr ("onclick", "fillf2l('original')");
 	}
 }
 function filloll(what = "original") {
 	for(var i=1; i<=57; i++) {
 		if (document.getElementById("oll" + i)) {
 			var sOll = "<b>" + window['oll'+i] + "</b>";
-			if (what == "better" ) {
-				sOll = better(sOll)
+			if (what == "empty" ) {
+				sOll = "";
 			}
-			sOll = color(sOll);
+			else
+			{
+				if (what == "better" ) {
+					sOll = better(sOll)
+				}
+				sOll = color(sOll);
+			}
 			document.getElementById("oll" + i).innerHTML = sOll;
 		}
 	}
@@ -213,17 +228,26 @@ function filloll(what = "original") {
 		$(".better").attr ("onclick", "filloll('better')");
 	}
 	else if (what == "better" ) {
-		$(".better").attr ("onclick", "filloll('original')");
+		$(".better").attr ("onclick", "filloll('empty')");
+	}
+	else if (what == "empty" ) {
+			$(".better").attr ("onclick", "filloll('original')");
 	}
 }
 function fill(what = "original") {
 	for(var i=1; i<=21; i++) {
 		if (document.getElementById("pll" + i)) {
 			var sPll = "<b>" + window['pll'+i] + "</b>";
-			if (what == "better" ) {
-				sPll = better(sPll)
+			if (what == "empty" ) {
+				sPll = "";
 			}
-			sPll = color(sPll);
+			else
+			{
+				if (what == "better" ) {
+					sPll = better(sPll)
+				}
+				sPll = color(sPll);
+			}
 			document.getElementById("pll" + i).innerHTML = sPll;
 		}
 	}
@@ -231,17 +255,26 @@ function fill(what = "original") {
 		$(".better").attr ("onclick", "fill('better')");
 	}
 	else if (what == "better" ) {
-		$(".better").attr ("onclick", "fill('original')");
+		$(".better").attr ("onclick", "fill('empty')");
+	}
+	else if (what == "empty" ) {
+			$(".better").attr ("onclick", "fill('original')");
 	}
 }
 function fillgdr(what = "original") {
 	for(var i=1; i<=5; i++) {
 		if (document.getElementById("gdr" + i)) {
 			var sgdr = "<b>" + window['gdr'+i] + "</b>";
-			if (what == "better" ) {
-				sgdr = better(sgdr)
+			if (what == "empty" ) {
+				sgdr = "";
 			}
-			sgdr = color(sgdr);
+			else
+			{
+				if (what == "better" ) {
+					sgdr = better(sgdr)
+				}
+				sgdr = color(sgdr);
+			}
 			sgdr = sgdr.replace (/Rw /g, "r ");
 			document.getElementById("gdr" + i).innerHTML = sgdr;
 		}
@@ -250,6 +283,9 @@ function fillgdr(what = "original") {
 		$(".better").attr ("onclick", "fillgdr('better')");
 	}
 	else if (what == "better" ) {
-		$(".better").attr ("onclick", "fillgdr('original')");
+		$(".better").attr ("onclick", "fillgdr('empty')");
+	}
+	else if (what == "empty" ) {
+			$(".better").attr ("onclick", "fillgdr('original')");
 	}
 }
